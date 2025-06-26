@@ -1,0 +1,45 @@
+nav {
+    height: 2.5cm;
+    background-color: rgb(65, 166, 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2cm;
+    border-bottom: 4px solid rgb(101, 96, 255);
+    font-family: Arial, sans-serif;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 2cm; /* spacing between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 {
+    color: rgb(99, 112, 112);
+    border: 2px solid rgb(81, 216, 23);
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav1:hover {
+    background-color: rgb(81, 216, 23);
+    color: white;
+}
+body {
+   background-image: url("/static/img/badyy.jpg");
+
+    background-size: fill;      /* Resize to fill */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+}
