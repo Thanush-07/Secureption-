@@ -37,8 +37,7 @@ nav h2 {
     color: white;
 }
 body {
-   background-image: url("/static/img/badyy.jpg");
-
+    background-color: rgb(210, 203, 203);
     background-size: fill;      /* Resize to fill */
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
@@ -46,4 +45,11 @@ body {
 #cont{
     border: 100px;
     border-color: rgb(255, 255, 255);
+    margin-top: 40px;
+     background-image: url("/static/img/badyy.jpg");
+     height: 525px;
+     width: 950px;
+     margin-left: 285px;
+     border-radius: 20px;
+
 }
