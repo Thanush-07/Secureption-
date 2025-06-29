@@ -43,3 +43,7 @@ body {
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
 }
+#cont{
+    border: 100px;
+    border-color: rgb(255, 255, 255);
+}
