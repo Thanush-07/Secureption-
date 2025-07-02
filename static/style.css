@@ -44,24 +44,33 @@ body {
     background-position: center; /* Center the image */
 }
 #cont{
-    border: 100px;
-    border-color: rgb(255, 255, 255);
-    border-color: black;
-    border-radius: 10px; 
+    
+   
+ border-color: black;   
     margin-top: 40px;
      background-image: url("/static/img/badyy.jpg");
-     height: 525px;
-     width: 950px;
-     margin-left: 285px;
-     display: inline;
-     justify-content: first baseline;
+     height: 550px;
+     width:28cm;
+    position: relative;
+    margin-left:210px;
+   border: 5px;
+   border-color: rgb(241, 195, 149);
+   border-radius: 20px;
+   border-style: solid;
   
 
 }
-#decryp{
-background-color: chartreuse;
-
+#img1{
+    height:8cm;
+    position: relative;
+    left: 100px;
+    top: 70px;
+    margin-top: 10px;
 }
-#encryp{
-background-color: blanchedalmond;
+#img2{
+    height: 8cm;
+    position: relative;
+    bottom: 230px;
+    left:630px;
+
 }
