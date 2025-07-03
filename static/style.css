@@ -52,7 +52,7 @@ body {
      height: 550px;
      width:28cm;
     position: relative;
-    margin-left:210px;
+    margin-left:220px;
    border: 5px;
    
    border-radius: 20px;
@@ -68,8 +68,9 @@ border-color: rgb(241, 195, 149);
     position: relative;
     left: 100px;
     top: 70px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 20px;
+    margin-left: 40px;
     border: 15px;
    
     border-radius: 10px;
@@ -87,4 +88,9 @@ border-color: rgb(241, 195, 149);
 }
 #img2:hover{
     border-color: azure;
+}
+#btn1{
+    border: 10px;
+    background-color: aquamarine;
+    margin-top: 100px;
 }
