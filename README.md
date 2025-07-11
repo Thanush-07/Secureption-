@@ -1,11 +1,11 @@
 📖 Project Explanation
 
-**Secureption** is a web-based encryption and decryption tool that implements the **RSA asymmetric encryption algorithm** using Python and Flask. The main goal of this project is to help users understand how public-key cryptography works through a simple and interactive interface.
+Secureption  is a web-based encryption and decryption tool that implements the **RSA asymmetric encryption algorithm** using Python and Flask. The main goal of this project is to help users understand how public-key cryptography works through a simple and interactive interface.
 
 Unlike traditional symmetric encryption where the same key is used to both encrypt and decrypt data, RSA uses a **pair of keys**:
 
-* A **public key** that is shared and used to **encrypt messages**
-* A **private key** that is kept secret and used to **decrypt messages**
+* A **public key** that is shared and used to  encrypt messages
+* A **private key** that is kept secret and used to  decrypt messages
 
 The application allows users to:
 
