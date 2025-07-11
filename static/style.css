@@ -18,7 +18,7 @@ nav h2 {
 .navbar {
     list-style: none;
     display: flex;
-    gap: 2cm; /* spacing between menu items */
+    gap: 2cm; 
     margin: 0;
     padding: 0;
 }
@@ -39,10 +39,9 @@ nav h2 {
 }
 body {
     background-color: rgb(210, 203, 203);
-    background-size: fill;      /* Resize to fill */
+    background-size: fill;      
     background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-}
+    background-position: center; }
 #cont{
     
    
