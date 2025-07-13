@@ -6,24 +6,17 @@ body {
   padding: 0;
 }
 
-/* Glowing Title */
-.glow-title {
-  text-align: center;
-  font-size: 36px;
-  margin-top: 30px;
-  color: #fff;
-  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
-}
+
 
 /* Navigation Bar */
 nav {
   height: 2.5cm;
-  background-color: rgb(103, 180, 247);
+  background-color: rgb(109, 190, 173);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2cm;
-  border-bottom: 4px solid rgb(101, 96, 255);
+  border-bottom: 4px solid rgb(174, 172, 216);
 }
 
 nav h2 {
@@ -57,9 +50,11 @@ nav h2 {
 
 /* Main Container */
 #cont {
-  margin: 40px auto;
-  padding: 20px;
-  width: 70%;
+
+  margin: 50px auto;
+  padding: 60px;
+  margin-top: 140px;
+  width:50%;
   border: 5px solid black;
   border-radius: 20px;
   background-color: #f9f9f9;
