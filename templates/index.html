@@ -1,12 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Secureption</title>
-  <link rel="icon" type="image" href="{{ url_for('static', filename='img/icon.jpg') }}">
-  <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
-</html>
+{% include 'head.html'%}
+
 <body>
   <!-- Navigation Bar -->
   <nav>
@@ -28,13 +24,13 @@
       <!-- Encryption -->
       <div class="section">
         <a href="#"><img src="static/img/encryption.png" alt="encryption" id="img1"></a>
-        <button class="action-btn">Encrypt</button>
+        <button class="action-btn " onclick="encrypt()">Encrypt</button>
       </div>
 
       <!-- Decryption -->
       <div class="section">
         <a href="#"><img src="static/img/decryption.png" alt="decryption" id="img2"></a>
-        <button class="action-btn">Decrypt</button>
+        <button class="action-btn" onclick="decrypt()">Decrypt</button>
       </div>
     </div>
 
