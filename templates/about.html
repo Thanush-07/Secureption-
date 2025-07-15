@@ -1,0 +1,21 @@
+{%extends '/head.html' %}
+
+ {% block title%}About|Secureption{%endblock%}
+ 
+ {%block content%}
+    <div class="container text-center my-5">
+  <h5>🔐 RSA Key Exchange Overview</h5>
+  <p class="text-muted small">A high-level visualization of how RSA encrypts and decrypts data securely.</p>
+
+  <img src="{{ url_for('static', filename='img/working.jpg') }}"
+       alt="RSA Encryption Overview"
+       class="img-fluid centered-image rounded shadow mb-3">
+
+  <p class="text-justify px-3">
+    This diagram demonstrates the flow of information in RSA: the sender encrypts a message with the recipient's public key,
+    and the recipient decrypts it with their private key. This ensures confidentiality and prevents unauthorized access to the message.
+  </p>
+</div>
+
+ </body>
+ {%endblock%}
