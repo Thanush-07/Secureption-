@@ -1,5 +1,9 @@
 alert("Welcome");
 
+function about(){
+ window.location.href='/about';
+}
+
 function redirectto()
 {
    window.location.href='/instruction';
