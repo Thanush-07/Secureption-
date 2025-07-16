@@ -1,21 +1,70 @@
-{%extends '/head.html' %}
+{% extends '/head.html' %}
 
- {% block title%}About|Secureption{%endblock%}
- 
- {%block content%}
-    <div class="container text-center my-5">
-  <h5>🔐 RSA Key Exchange Overview</h5>
-  <p class="text-muted small">A high-level visualization of how RSA encrypts and decrypts data securely.</p>
+{% block title %} About | Secureption {% endblock %}
 
-  <img src="{{ url_for('static', filename='img/working.jpg') }}"
-       alt="RSA Encryption Overview"
-       class="img-fluid centered-image rounded shadow mb-3">
+{% block content %}
+<nav>
+    <h2>Secureption</h2>
+    <ul class="navbar">
+      <li class="nav1" onclick="Home()">Home</li>
+      <li class="nav1" onclick="about()">About</li>
+    
+    </ul>
+  </nav>
+<div class="container my-5">
 
-  <p class="text-justify px-3">
-    This diagram demonstrates the flow of information in RSA: the sender encrypts a message with the recipient's public key,
-    and the recipient decrypts it with their private key. This ensures confidentiality and prevents unauthorized access to the message.
+  <!-- Introduction -->
+  <div class="text-center mb-5">     
+    <center><h1>🔐 What is Secureption?</h1></center>
+    <hr>
+    <br>
+    <p class="intro-text">
+      Secureption is a beginner-friendly, web-based RSA encryption and decryption tool built using Python and Flask. 
+      It helps users understand how public-key cryptography works by allowing them to generate keys, encrypt, and decrypt messages directly in the browser.
+    </p>
+  </div>
+
+  <!-- Key Features -->
+  <div class="features mb-5">
+    <hr>
+    <br>
+    <center><h3>📌 Key Features</h3></center>
+    <br>
+    <hr>
+    <ul>
+      <li><strong>🔑 RSA Key Generation:</strong> Create 2048-bit secure key pairs</li>
+      <li><strong>📥 Encryption:</strong> Encrypt plaintext using the public key</li>
+      <li><strong>📤 Decryption:</strong> Decrypt messages using the private key</li>
+      <li><strong>📄 Base64 Output:</strong> Easy to share and readable ciphertext</li>
+      <li><strong>🧠 Educational Focus:</strong> Built for students and security learners</li>
+      <li><strong>⚙️ Secure Library:</strong> Uses Python's <code>cryptography</code> with OAEP padding</li>
+    </ul>
+  </div>
+<br>
+<br>
+<hr>
+  <!-- Diagram Section -->
+  <div class="text-center my-5">
+    <center><h3 style="align-items: center;">🔄 RSA Key Exchange Overview</h3></center>
+    <center><p class="text-muted small">A high-level visualization of how RSA encrypts and decrypts messages securely.</p></center>
+<br>
+    <img src="{{ url_for('static', filename='img/working.jpg') }}"
+         alt="RSA Encryption Overview"
+         class="img-fluid centered-image rounded shadow mb-3">
+
+    <p class="diagram-desc">
+      This diagram demonstrates the flow of information in RSA: the sender encrypts a message using the recipient's public key.
+      Only the matching private key can decrypt it, ensuring confidentiality. Even if intercepted, the ciphertext cannot be decoded without the private key.
+    </p>
+  </div>
+
+  <!-- CTA -->
+  <p class="page-note">
+    🚀 Want to try it out? Head to the <a href="{{ url_for('home') }}">Encrypt</a> page and experiment with your own key pair!
   </p>
+
 </div>
 
- </body>
- {%endblock%}
+
+<script src="{{url_for('static', filename='/js/script.js')}}"></script>
+{% endblock %}
