@@ -1,5 +1,9 @@
 alert("Welcome");
 
+
+function Home(){
+  window.location.href='/'
+}
 function about(){
  window.location.href='/about';
 }
