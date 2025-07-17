@@ -1,0 +1,19 @@
+.encrypt-form textarea {
+  resize: vertical;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.output-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.output-box textarea {
+  background: #e9ecef;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
