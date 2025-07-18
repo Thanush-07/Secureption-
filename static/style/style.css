@@ -70,7 +70,7 @@ nav h2 {
   transform: scale(1.02);
 }
 
-/* Image row (horizontal layout) */
+
 .image-row {
   display: flex;
   justify-content: center;
