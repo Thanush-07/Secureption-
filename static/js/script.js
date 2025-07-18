@@ -1,6 +1,3 @@
-alert("Welcome");
-
-
 function Home(){
   window.location.href='/'
 }
