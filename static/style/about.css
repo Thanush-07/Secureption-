@@ -3,5 +3,35 @@ body{
 }
 .img{
     position: relative ;
-    left: 80%;
+    left: 51%;
+    padding: 40px;
+    padding-top: 75px;
+}
+.img:hover{
+    border-radius: 10px;
+    border-color: black;
+    border: 10px;
+}
+.bimg{
+position: relative;
+left: 33.5cm;
+font-size: 23px;
+padding-top: 0px;
+}
+
+#content_container{
+    position: relative;
+    height: auto;
+    width: 25cm;
+    top: 160px;
+    left: 30px;
+}
+#ab{
+    font-weight: 10px;
+    padding-left: 50px;
+    font-size: 40px;
+}
+#para{
+    padding-left: 100px;
+    top: 40px;
 }
