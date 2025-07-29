@@ -11,60 +11,8 @@
     
     </ul>
   </nav>
-<div class="container my-5">
-
-  <!-- Introduction -->
-  <div class="text-center mb-5">     
-    <center><h1>🔐 What is Secureption?</h1></center>
-    <hr>
-    
-    <p class="intro-text">
-      Secureption is a beginner-friendly, web-based RSA encryption and decryption tool built using Python and Flask. 
-      It helps users understand how public-key cryptography works by allowing them to generate keys, encrypt, and decrypt messages directly in the browser.
-    </p>
-  </div>
-
-  <!-- Key Features -->
-  <div class="features mb-5">
-    <hr>
-    <br>
-    <center><h3>📌 Key Features</h3></center>
-    <br>
-    <hr>
-    <ul>
-      <li><strong>🔑 RSA Key Generation:</strong> Create 2048-bit secure key pairs</li>
-      <li><strong>📥 Encryption:</strong> Encrypt plaintext using the public key</li>
-      <li><strong>📤 Decryption:</strong> Decrypt messages using the private key</li>
-      <li><strong>📄 Base64 Output:</strong> Easy to share and readable ciphertext</li>
-      <li><strong>🧠 Educational Focus:</strong> Built for students and security learners</li>
-      <li><strong>⚙️ Secure Library:</strong> Uses Python's <code>cryptography</code> with OAEP padding</li>
-    </ul>
-  </div>
-<br>
-<br>
-<hr>
-  <!-- Diagram Section -->
-  <div class="text-center my-5">
-    <center><h3 style="align-items: center;">🔄 RSA Key Exchange Overview</h3></center>
-    <center><p class="text-muted small">A high-level visualization of how RSA encrypts and decrypts messages securely.</p></center>
-<br>
-    <img src="{{ url_for('static', filename='img/working.jpg') }}"
+<img src="{{ url_for('static', filename='img/working.jpg') }}"
          alt="RSA Encryption Overview"
-         class="img-fluid centered-image rounded shadow mb-3">
+         class="img">
 
-    <p class="diagram-desc">
-      This diagram demonstrates the flow of information in RSA: the sender encrypts a message using the recipient's public key.
-      Only the matching private key can decrypt it, ensuring confidentiality. Even if intercepted, the ciphertext cannot be decoded without the private key.
-    </p>
-  </div>
-
-  <!-- CTA -->
-  <p class="page-note">
-    🚀 Want to try it out? Head to the <a href="{{ url_for('home') }}">Encrypt</a> page and experiment with your own key pair!
-  </p>
-
-</div>
-
-
-<script src="{{url_for('static', filename='/js/script.js')}}"></script>
-{% endblock %}
+         {% endblock %}
