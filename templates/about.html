@@ -11,8 +11,15 @@
     
     </ul>
   </nav>
-<img src="{{ url_for('static', filename='img/working.jpg') }}"
+  <div id="content_container"> 
+    <h2 id="ab">About Us</h2>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ad fuga maxime praesentium cumque repellendus assumenda non doloremque. Error esse voluptate explicabo impedit maiores aperiam necessitatibus mollitia quidem, magni ea.</p>
+  </div>
+<div>
+  <img src="{{ url_for('static', filename='img/working.jpg') }}"
          alt="RSA Encryption Overview"
          class="img">
+         <h3 class="bimg">🔄 RSA Key Exchange Overview</h3>
+</div>
 
          {% endblock %}
