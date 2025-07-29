@@ -9,6 +9,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/encrypt')
+def encrypt():
+    return render_template ('encrypt.html')
 
 @app.route('/about')
 def about():
