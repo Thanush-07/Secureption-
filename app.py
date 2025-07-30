@@ -17,9 +17,7 @@ def encrypt():
 def about():
     return render_template('about.html')
 
-@app.route('/decrypt')
-def decrypt():
-    return render_template('decrypt.html')
+
 
 
 if __name__ == '__main__':
