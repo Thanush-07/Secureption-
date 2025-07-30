@@ -12,14 +12,24 @@
     </ul>
   </nav>
   <div id="content_container"> 
+    
     <h2 id="ab">About Us</h2>
-    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ad fuga maxime praesentium cumque repellendus assumenda non doloremque. Error esse voluptate explicabo impedit maiores aperiam necessitatibus mollitia quidem, magni ea.</p>
+    <p class="para">  
+   <strong>Secureption</strong> is a simple web-based RSA encryption tool built with Python and Flask to help beginners understand public-key cryptography. Users input a message and a PEM-formatted public key, and the app securely encrypts the message using RSA with OAEP padding. The result is displayed in Base64 format for easy sharing. This project demonstrates the encryption flow clearly, using the `cryptography` library for secure operations and Flask for the web interface.
+
+ <p class="para">
+      The process begins with generating an RSA key pair (a public and private key). The sender encrypts a message using the recipient’s <strong>public key</strong>. Only the <strong>private key</strong> can decrypt the message. This ensures that even if the data is intercepted, it remains unreadable to anyone without the private key.
+    </p>
   </div>
-<div>
-  <img src="{{ url_for('static', filename='img/working.jpg') }}"
+  <div id="img_cont">
+
+
+    <img src="{{ url_for('static', filename='img/working.jpg') }}"
          alt="RSA Encryption Overview"
          class="img">
-         <h3 class="bimg">🔄 RSA Key Exchange Overview</h3>
 </div>
+
+          <h3 class="bimg">🔄 RSA Key Exchange Overview</h3>
+
 
          {% endblock %}
