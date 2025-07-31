@@ -1,0 +1,51 @@
+{% extends '/head.html' %}
+
+{% block title %}Instructions | Secureption{% endblock %}
+
+{% block content %}
+ <nav>
+    <h2>Secureption</h2>
+    <ul class="navbar">
+      <li class="nav1" onclick="Home()">Home</li>
+      <li class="nav1" onclick="about()">About</li>
+    
+    </ul>
+  </nav>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">📘 How to Use Secureption</h2>
+
+  <div class="instruction-section mb-5">
+    <h4>🔐 Encrypting a Message</h4>
+    <ol>
+      <li>Navigate to the <strong>Encrypt</strong> page.</li>
+      <li>Paste a valid <strong>public key</strong> in PEM format into the provided box.</li>
+      <li>Enter your <strong>plaintext message</strong> below it.</li>
+      <li>Click the <strong>Encrypt</strong> button to generate encrypted Base64 output.</li>
+      <li>Use the <strong>Copy</strong> button to copy the ciphertext easily.</li>
+    </ol>
+  </div>
+
+  <div class="instruction-section mb-5">
+    <h4>🔓 Decrypting a Message</h4>
+    <ol>
+      <li>Go to the <strong>Decrypt</strong> page.</li>
+      <li>Paste your <strong>private key</strong> (PEM format) in the top box.</li>
+      <li>Paste the <strong>Base64-encoded ciphertext</strong> in the next box.</li>
+      <li>Click the <strong>Decrypt</strong> button to reveal the original message.</li>
+    </ol>
+  </div>
+
+  <div class="instruction-section">
+    <h4>⚠️ Key Notes</h4>
+    <ul>
+      <li>Ensure both keys are in valid <strong>PEM format</strong> (starting with <code>-----BEGIN PUBLIC KEY-----</code> or <code>-----BEGIN PRIVATE KEY-----</code>).</li>
+      <li>Use a key size of at least <strong>2048 bits</strong> for better security.</li>
+      <li>Messages are encrypted using <strong>OAEP padding</strong> with SHA-256 for security.</li>
+      <li>This tool is designed for educational purposes. Do not use it for sensitive production data.</li>
+    </ul>
+  </div>
+
+</div>
+{% endblock %}
+
