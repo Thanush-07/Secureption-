@@ -1,0 +1,75 @@
+/* General container styling */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* Header */
+h2 {
+  font-size: 2.2rem;
+  color: #1e88e5;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Section titles */
+.instruction-section h4 {
+  font-size: 1.4rem;
+  color: #0d47a1;
+  margin-top: 30px;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 5px;
+}
+
+/* Ordered and unordered lists */
+.instruction-section ol,
+.instruction-section ul {
+  padding-left: 25px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+
+.instruction-section li {
+  margin-bottom: 10px;
+}
+
+/* Code tags */
+.instruction-section code {
+  background-color: #f1f1f1;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e65100;
+  font-size: 0.95rem;
+}
+
+/* Notes section */
+.instruction-section ul {
+  background: #f9f9f9;
+  border-left: 4px solid #1976d2;
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+.instruction-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .instruction-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
