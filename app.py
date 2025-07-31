@@ -17,8 +17,8 @@ def encrypt():
 def about():
     return render_template('about.html')
 
-
-
-
+@app.route('/instruction')
+def instruction():
+    return render_template('/instruction.html')
 if __name__ == '__main__':
     app.run(debug=True)
