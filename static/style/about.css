@@ -1,47 +1,122 @@
-body{
+body {
     background-color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
-#img_cont{
-    position: relative;
-    left: 52%;
-    bottom: 9cm;
-    justify-items: center;
-     width: 700px;
-    border-color: rgb(104, 101, 101);
-    border-radius: 15px;
-   
+
+/* Container for content */
+#content_container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
 }
-#img_cont:hover{
- 
-    cursor: pointer;
-}
-#content_container{
-    position: relative;
-    height: auto;
-    width: 23cm;
-    top: 60px;
-    left: 30px;
-}
-#ab{
-    font-weight: 20px;
-    padding-left: 45px;
-    font-size: 45px;
+
+/* Title */
+#ab {
+    font-weight: 600;
+    font-size: 2.5rem;
     color: rgb(110, 9, 30);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
-.para{
-    padding-left: 90px;
-    padding-top: 10px;
-    top: 40px;
-    font-size: 26px;
+
+/* Paragraph styling */
+.para {
+    font-size: 1.25rem;
     color: rgb(41, 39, 39);
-    font-weight: 5px;
-    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: justify;
 }
-.bimg{
-    position: relative;
-    font-size: 30px;
-    bottom: 299px;
-    left: 62%;
+
+/* Image container */
+#img_cont {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 100%;
+}
+
+.img {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* Caption below image */
+.bimg {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav1 {
+    cursor: pointer;
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+.nav1:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout for smaller devices */
+@media (max-width: 768px) {
+    #ab {
+        font-size: 1.8rem;
+    }
+
+    .para {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .bimg {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
