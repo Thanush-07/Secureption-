@@ -4,9 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{% block title%}Secureption{%endblock%}</title>
   <link rel="icon" type="image" href="{{ url_for('static', filename='img/icon.jpg') }}">
-  <link rel="stylesheet" href="{{ url_for('static',filename='style/style.css')}}">
-  <link rel="stylesheet" href="{{ url_for('static',filename='style/about.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='/style/style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='/style/about.css')}}">
   <link rel="stylesheet" href="{{url_for('static',filename='/style/encrypt.css')}}">
+   <link rel="stylesheet" href="{{url_for('static',filename='/style/instruction.css')}}">
 
 </head>
 {%endblock%}
