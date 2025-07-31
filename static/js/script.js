@@ -16,5 +16,8 @@ function decrypt()
    window.location.href='/decrypt';
 }
 function encrypt(){
-   window.location.href='/encrypt'
+   window.location.href='/encrypt';    
+}
+function instruction(){
+   window.location.href='/instruction';
 }
