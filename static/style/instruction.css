@@ -59,7 +59,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   h2 {
     font-size: 1.8rem;
