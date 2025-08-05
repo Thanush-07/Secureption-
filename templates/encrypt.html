@@ -22,14 +22,7 @@
     </div>
   </form>
 
-  {% if encrypted_text %}
-  <div class="output-box mt-5">
-    <label>🔒 Encrypted Text (Base64):</label>
-    <textarea id="encryptedOutput" class="form-control" rows="6" readonly>{{ encrypted_text }}</textarea>
-    <button onclick="copyToClipboard()" class="btn btn-outline-success mt-2">📋 Copy</button>
-  </div>
-  {% endif %}
-</div>
+  
 
 <script>
 document.querySelector('form').addEventListener('submit', function (e) {
