@@ -21,10 +21,3 @@ function encrypt(){
 function instruction(){
    window.location.href='/instruction';
 }
-
-function copyDecrypted() {
-  const output = document.getElementById("decryptedOutput");
-  output.select();
-  document.execCommand("copy");
-  alert("Decrypted text copied to clipboard!");
-}
